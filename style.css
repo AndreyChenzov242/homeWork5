@@ -1,4 +1,7 @@
-*{transition: all 0.1s ease-in;}
+* {
+    transition: all 0.25s ease-in;
+}
+
 body, html {
     margin: 0;
     background-color: #3B3F45;
@@ -23,7 +26,6 @@ header h2 {
 }
 
 .container {
-
     margin-left: auto;
     margin-right: auto;
     width: 50%;
@@ -33,6 +35,7 @@ header h2 {
 
 .checkbox_and_label {
     background-color: #88839E;
+
 }
 
 label {
@@ -41,6 +44,8 @@ label {
     font-size: 30px;
     color: #F7F9F9;
     margin: 0;
+    border-top: 2px solid #88839E;
+    border-bottom: 2px solid #88839E;
 }
 
 span {
@@ -49,10 +54,11 @@ span {
     font-size: 20px;
 }
 
-.checkbox_and_label_item:hover {
+label:hover {
     background-color: #625E77;
-    border-top: 2px solid #fff;
-    border-bottom: 2px solid #fff;
+    border-top-color:  #fff;
+    border-bottom-color:  #fff;
+    cursor: pointer;
 }
 
 input[type="checkbox"] {
@@ -79,17 +85,17 @@ input[type=checkbox]:checked+label:before {
     content: '\2714';
 }
 
-input[type=checkbox]:checked+label{
+input[type=checkbox]:checked+label {
     background-color: rgb(93, 88, 119);
     text-decoration: line-through;
     color: #9B92A5;
 }
 
-input[type=checkbox]:checked+label span{
+input[type=checkbox]:checked+label span {
     color: #9B92A5;
 }
 
-input[type="submit"]{
+input[type="submit"] {
     background-color: #4A4F56;
     color: #EB7E79;
     width: 100%;
@@ -97,4 +103,5 @@ input[type="submit"]{
     height: 37px;
     margin-top: 25px;
     text-align: center;
+    cursor: pointer;
 }
