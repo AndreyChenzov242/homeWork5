@@ -1,0 +1,98 @@
+body, html {
+    margin: 0;
+    background-color: #3B3F45;
+}
+
+header {
+    background-color: #4A4F56;
+    text-align: center;
+}
+
+header h1 {
+    padding-top: 10px;
+    color: #EB7E7F;
+    margin: 0;
+}
+
+header h2 {
+    color: #EB7D7D;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 600px;
+}
+
+.checkbox_and_label {
+    background-color: #88839E;
+}
+
+label {
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    color: #F7F9F9;
+    margin: 0;
+}
+
+span {
+    vertical-align: 1.5px;
+    color: #C5B9B7;
+    font-size: 14px;
+}
+
+.checkbox_and_label_item:hover {
+    background-color: #625E77;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+/* формируем внешний вид чекбокса в псевдоэлементе before */
+
+label:before {
+    content: " ";
+    color: #EB7E7F;
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    background: #FFF;
+    border: 1px solid #e3e3e3;
+    border-image: initial;
+    vertical-align: top;
+}
+
+/* вариации внешнего вида в зав-ти от статуса checkbox */
+
+/* checked */
+
+input[type=checkbox]:checked+label:before {
+    content: '\2714';
+}
+
+input[type=checkbox]:checked+label{
+    background-color: rgb(93, 88, 119);
+    text-decoration: line-through;
+    color: #9B92A5;
+}
+
+input[type=checkbox]:checked+label span{
+    color: #9B92A5;
+}
+
+input[type="submit"]{
+    background-color: #4A4F56;
+    color: #EB7E79;
+    width: 100%;
+    font-size: 18px;
+    height: 37px;
+    margin-top: 25px;
+}
