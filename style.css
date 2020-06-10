@@ -1,6 +1,7 @@
 body, html {
     margin: 0;
     background-color: #3B3F45;
+    height: 100hv;
 }
 
 header {
@@ -21,8 +22,12 @@ header h2 {
 }
 
 .container {
-    margin: 0 auto;
-    width: 600px;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 744px;
+    min-width: 533px;
 }
 
 .checkbox_and_label {
@@ -32,15 +37,15 @@ header h2 {
 label {
     display: block;
     padding: 10px;
-    font-size: 20px;
+    font-size: 30px;
     color: #F7F9F9;
     margin: 0;
 }
 
 span {
-    vertical-align: 1.5px;
+    vertical-align: 2.5px;
     color: #C5B9B7;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .checkbox_and_label_item:hover {
@@ -53,8 +58,6 @@ input[type="checkbox"] {
     display: none;
 }
 
-/* формируем внешний вид чекбокса в псевдоэлементе before */
-
 label:before {
     content: " ";
     color: #EB7E7F;
@@ -62,17 +65,14 @@ label:before {
     margin-right: 15px;
     position: relative;
     text-align: center;
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 30px;
     background: #FFF;
     border: 1px solid #e3e3e3;
     border-image: initial;
     vertical-align: top;
+    padding-bottom: 7px
 }
-
-/* вариации внешнего вида в зав-ти от статуса checkbox */
-
-/* checked */
 
 input[type=checkbox]:checked+label:before {
     content: '\2714';
@@ -92,7 +92,8 @@ input[type="submit"]{
     background-color: #4A4F56;
     color: #EB7E79;
     width: 100%;
-    font-size: 18px;
+    font-size: 20px;
     height: 37px;
     margin-top: 25px;
+    text-align: center;
 }
